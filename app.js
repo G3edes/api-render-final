@@ -145,8 +145,8 @@ app.get('/v1/lion-school/alunos/curso/:curso/anoconclusao/:ano', cors(), async f
 })
 
 
-
+const part=process.env.PORT || 8080
 //configurando a porta que a api vai rodar, executa a api e faz com que fique aguardando novas aquisições
-app.listen('8080', function(){
+app.listen(port, function(){
     console.log('API funcionando e aguardando requisições..')
 })
